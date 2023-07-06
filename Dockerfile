@@ -26,11 +26,11 @@ USER user
 
 ENV LANG C.UTF-8
 
-#https://github.com/cmdr2/stable-diffusion-ui/releases
+#https://github.com/easydiffusion/easydiffusion/releases
 ENV STABLE_DIFFUSION_UI_VERSION v2.5.24
 
 RUN cd /tmp \
-	&& curl -sSOL "https://github.com/cmdr2/stable-diffusion-ui/releases/download/${STABLE_DIFFUSION_UI_VERSION}/Easy-Diffusion-Linux.zip" \
+	&& curl -sSOL "https://github.com/easydiffusion/easydiffusion/releases/download/${STABLE_DIFFUSION_UI_VERSION}/Easy-Diffusion-Linux.zip" \
 	&& unzip /tmp/Easy-Diffusion-Linux.zip -d /opt \
 	&& rm /tmp/Easy-Diffusion-Linux.zip \
 	&& cd /opt/easy-diffusion/ \
